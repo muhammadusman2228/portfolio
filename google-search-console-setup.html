@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Console Verification - Muhammad Usman Portfolio</title>
+    <meta name="google-site-verification" content="placeholder-verification-code">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: #e6eef8;
+            padding: 40px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #0f1724;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        h1 { color: #3b82f6; margin-bottom: 20px; }
+        p { line-height: 1.6; margin: 10px 0; }
+        code {
+            background: #1a2332;
+            padding: 10px;
+            border-radius: 6px;
+            display: block;
+            margin: 20px 0;
+            font-size: 12px;
+            word-break: break-all;
+        }
+        .steps { text-align: left; margin: 30px 0; }
+        .steps ol { padding-left: 20px; }
+        .steps li { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Google Search Console Setup</h1>
+        <p>Follow these steps to register your portfolio with Google Search Console:</p>
+        
+        <div class="steps">
+            <ol>
+                <li>Open <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a></li>
+                <li>Click "+ Create property"</li>
+                <li>Select "URL prefix"</li>
+                <li>Enter: <code>https://www.usman2228.com</code></li>
+                <li>Click Continue</li>
+                <li><strong>Choose verification method:</strong>
+                    <ul>
+                        <li><strong>Recommended:</strong> DNS TXT Record
+                            <ul>
+                                <li>Copy the TXT record value Google provides</li>
+                                <li>Go to your domain registrar's DNS settings</li>
+                                <li>Add a new TXT record with the value</li>
+                                <li>Come back and click "Verify"</li>
+                            </ul>
+                        </li>
+                        <li><strong>Alternative:</strong> HTML File
+                            <ul>
+                                <li>Download the HTML file Google provides</li>
+                                <li>Place it in your repository root</li>
+                                <li>Commit and push to GitHub</li>
+                                <li>Click "Verify"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>After verification, go to <strong>Sitemaps</strong> (left menu)</li>
+                <li>Enter: <code>https://www.usman2228.com/sitemap.xml</code></li>
+                <li>Click Submit</li>
+            </ol>
+        </div>
+        
+        <p><strong>⏳ Note:</strong> Your site will start appearing in Google search results within 3-7 days to a few weeks, depending on content and Google's crawl schedule.</p>
+        
+        <p><a href="https://www.usman2228.com" target="_blank">← Back to Portfolio</a></p>
+    </div>
+</body>
+</html>
