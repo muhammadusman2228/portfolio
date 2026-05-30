@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Muhammad Usman — Portfolio</title>
-  <meta name="description" content="Muhammad Usman - Frontend developer, designer & problem solver. Explore my portfolio, projects, and academic background." />
-  <meta name="keywords" content="portfolio, developer, frontend, web design, Muhammad Usman" />
+  <meta name="description" content="Muhammad Usman - Senior Full-Stack Developer, SaaS builder & Computer Science student. Specialized in Next.js, React, Node.js, and secure architectures." />
+  <meta name="keywords" content="portfolio, developer, fullstack, web development, SaaS, Muhammad Usman, Next.js, TypeScript" />
   <meta name="author" content="Muhammad Usman" />
   <link rel="canonical" href="https://www.usman2228.com" />
   
   <!-- Open Graph for Social Sharing -->
   <meta property="og:title" content="Muhammad Usman — Portfolio" />
-  <meta property="og:description" content="Frontend developer, designer & problem solver. Explore my projects and skills." />
+  <meta property="og:description" content="Senior Full-Stack Developer & SaaS builder. Explore my latest platforms and core CS expertise." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.usman2228.com" />
   <meta property="og:image" content="https://www.usman2228.com/assets/profile.jpg" />
@@ -20,14 +20,18 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Muhammad Usman — Portfolio" />
-  <meta name="twitter:description" content="Frontend developer & designer. Check out my portfolio and projects." />
+  <meta name="twitter:description" content="Full-Stack Developer & SaaS builder. View live web applications and technical details." />
   <meta name="twitter:image" content="https://www.usman2228.com/assets/profile.jpg" />
   
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-spot spot1"></div>
+  <div class="glow-spot spot2"></div>
+
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <a class="brand" href="#">Muhammad Usman</a>
       <button id="nav-toggle" aria-label="Toggle navigation" class="nav-toggle">☰</button>
       <nav class="nav" id="nav">
@@ -40,11 +44,17 @@
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="container hero-inner">
         <div class="hero-left">
           <h1>Hi, I'm <span class="accent">Muhammad Usman</span></h1>
-          <p class="lead">I build modern, responsive web experiences. Full-stack web developer • Software engineer • Problem solver.</p>
+          <p class="lead" style="min-height: 50px;">
+            I am a <span id="typed-text" class="typing-text" style="font-weight: 700; color: #a5b4fc;"></span>
+          </p>
+          <p class="lead" style="margin-top: 10px;">
+            I architect high-performance, secure web systems and end-to-end SaaS products. Passionate about writing clean, optimized code and solving complex computational challenges.
+          </p>
           <p class="ctas">
             <a class="btn" href="#projects">View Projects</a>
             <a class="btn ghost" href="#contact">Contact Me</a>
@@ -52,104 +62,165 @@
         </div>
         <div class="hero-right">
           <div class="portrait">
-            <!-- Place your profile image at: assets/profile.jpg -->
-            <img src="WhatsApp Image 2025-12-05 at 4.47.10 PM.jpeg" alt="Muhammad Usman" class="profile-img" loading="lazy">
+            <img src="WhatsApp Image 2025-12-05 at 4.47.10 PM.jpeg" alt="Muhammad Usman Profile Photo" class="profile-img" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- About Section -->
     <section class="container about" id="about">
       <h2>About Me</h2>
-      <p>Hello! I am Muhammad Usman, a passionate Computer Science student and a dedicated full-stack web developer. I specialize in building fast, accessible, and beautiful user interfaces. My foundation is built on modern web technologies as well as core software engineering principles. I am always exploring new languages, improving my programming skills, and creating digital experiences that leave a lasting impact.</p>
+      <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); max-width: 900px;">
+        Hello! I am a passionate Computer Science student and a dedicated full-stack software engineer. I specialize in building robust, secure, and production-grade web platforms. My expertise spans modern frontend frameworks, highly scalable backend systems, database optimization, and secure zero-knowledge cryptographical systems. I love transforming challenging concepts into highly performant SaaS applications.
+      </p>
+      <h3 style="margin-top: 32px; font-family: var(--font-heading); font-size: 1.4rem;">Modern Technology Stack</h3>
       <ul class="skills">
-        <li>JavaScript / TypeScript</li>
-        <li>React / Next.js</li>
-        <li>HTML5 &amp; Vanilla CSS</li>
-        <li>C++ &amp; Java</li>
-        <li>Responsive Web Design</li>
+        <li>Next.js / React</li>
+        <li>TypeScript</li>
+        <li>Node.js / Express</li>
+        <li>Tailwind CSS</li>
+        <li>JWT / Secure Auth</li>
+        <li>PostgreSQL / MongoDB</li>
+        <li>Python / OpenCV</li>
+        <li>C++ / Java</li>
+        <li>Git &amp; GitHub</li>
+        <li>RESTful APIs</li>
       </ul>
     </section>
 
+    <!-- Projects Section -->
     <section class="container projects" id="projects">
-      <h2>Projects</h2>
-      <p class="muted">Click a project to open it in a new tab.</p>
-      <div class="grid">
-        <article class="card">
-          <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/Resume-Builder-'); background-size: cover; background-position: center;"></div>
-          <div class="card-body">
-            <h3>Resume Builder Website</h3>
-            <p class="muted">A web application to generate professional resumes dynamically.</p>
-            <p class="card-actions">
-              <a class="link" href="https://muhammadusman2228.github.io/Resume-Builder-/" target="_blank" rel="noopener">Live Page</a>
-              <span class="muted" style="margin: 0 5px;">|</span>
-              <a class="link" href="https://github.com/muhammadusman2228/Resume-Builder-" target="_blank" rel="noopener">GitHub Repo</a>
-            </p>
-          </div>
-        </article>
+      <h2>Featured Engineering Projects</h2>
+      <p class="muted">Explore my live SaaS applications and professional security projects. Click on cards to view live details.</p>
+      
+      <!-- Interactive Category Filters -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="saas">SaaS Platforms</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="security">Security &amp; Encryption</button>
+      </div>
 
-        <article class="card">
-          <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/Portfolio-Generator'); background-size: cover; background-position: center;"></div>
-          <div class="card-body">
-            <h3>Portfolio Generator</h3>
-            <p class="muted">A tool to quickly generate and deploy personalized portfolios.</p>
-            <p class="card-actions">
-              <a class="link" href="https://muhammadusman2228.github.io/Portfolio-Generator/" target="_blank" rel="noopener">Live Page</a>
-              <span class="muted" style="margin: 0 5px;">|</span>
-              <a class="link" href="https://github.com/muhammadusman2228/Portfolio-Generator" target="_blank" rel="noopener">GitHub Repo</a>
-            </p>
-          </div>
-        </article>
+      <div class="projects-grid">
+        <!-- Project 1: CoCode Collaborative Web App -->
+        <div class="card-wrapper" data-category="saas fullstack">
+          <article class="card">
+            <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/CoCode-Fun'); background-size: cover; background-position: center;"></div>
+            <div class="card-body">
+              <h3>CoCode Real-time Collaborative IDE</h3>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>WebSockets</span>
+                <span>Tailwind CSS</span>
+                <span>SaaS</span>
+              </div>
+              <p>A production-ready, multiplayer collaborative code editor live at <a href="https://cocode.fun" target="_blank" style="color: #c084fc; text-decoration: none; font-weight: 600;">cocode.fun</a>. Built with real-time text-synchronization algorithms, integrated chat channels, dynamic workspace setups, and live compiler endpoints.</p>
+              <div class="card-actions">
+                <a class="link" href="https://cocode.fun" target="_blank" rel="noopener">Live Page ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-        <article class="card">
-          <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/Media_Player_Assignement'); background-size: cover; background-position: center;"></div>
-          <div class="card-body">
-            <h3>Media Player App</h3>
-            <p class="muted">Mobile application development project featuring media playback.</p>
-            <p class="card-actions">
-              <a class="link" href="https://github.com/muhammadusman2228/Media_Player_Assignement" target="_blank" rel="noopener">GitHub Repo</a>
-            </p>
-          </div>
-        </article>
+        <!-- Project 2: SaaS Resume Builder -->
+        <div class="card-wrapper" data-category="saas fullstack">
+          <article class="card">
+            <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/Resume-Builder-'); background-size: cover; background-position: center;"></div>
+            <div class="card-body">
+              <h3>Professional Resume Builder SaaS</h3>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>PDF Generation</span>
+              </div>
+              <p>A dynamic web platform where users can generate, customize, and export professional ATS-friendly resumes in real-time. Employs advanced templating modules and clean schema design for profile persistence.</p>
+              <div class="card-actions">
+                <a class="link" href="https://muhammadusman2228.github.io/Resume-Builder-/" target="_blank" rel="noopener">Live Page ↗</a>
+                <span class="muted">|</span>
+                <a class="link" href="https://github.com/muhammadusman2228/Resume-Builder-" target="_blank" rel="noopener">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-        <article class="card">
-          <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/ListView'); background-size: cover; background-position: center;"></div>
-          <div class="card-body">
-            <h3>ListView Application</h3>
-            <p class="muted">Mobile application development project demonstrating list views.</p>
-            <p class="card-actions">
-              <a class="link" href="https://github.com/muhammadusman2228/ListView" target="_blank" rel="noopener">GitHub Repo</a>
-            </p>
-          </div>
-        </article>
+        <!-- Project 3: SaaS Portfolio Website Generator -->
+        <div class="card-wrapper" data-category="saas">
+          <article class="card">
+            <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/Portfolio-Generator'); background-size: cover; background-position: center;"></div>
+            <div class="card-body">
+              <h3>Portfolio Website Generator</h3>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>GitHub API</span>
+                <span>Vercel APIs</span>
+              </div>
+              <p>An automated builder SaaS that pulls repository details, projects, and user bio directly from the GitHub API and renders a customized, fully optimized portfolio deployed automatically with one-click actions.</p>
+              <div class="card-actions">
+                <a class="link" href="https://muhammadusman2228.github.io/Portfolio-Generator/" target="_blank" rel="noopener">Live Page ↗</a>
+                <span class="muted">|</span>
+                <a class="link" href="https://github.com/muhammadusman2228/Portfolio-Generator" target="_blank" rel="noopener">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
 
-        <article class="card">
-          <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/College-Website'); background-size: cover; background-position: center;"></div>
-          <div class="card-body">
-            <h3>College Website</h3>
-            <p class="muted">A responsive and user-friendly website for a college.</p>
-            <p class="card-actions">
-              <a class="link" href="https://muhammadusman2228.github.io/College-Website/" target="_blank" rel="noopener">Live Page</a>
-              <span class="muted" style="margin: 0 5px;">|</span>
-              <a class="link" href="https://github.com/muhammadusman2228/College-Website" target="_blank" rel="noopener">GitHub Repo</a>
-            </p>
-          </div>
-        </article>
+        <!-- Project 4: Enterprise-Grade Secure Auth Project -->
+        <div class="card-wrapper" data-category="security fullstack">
+          <article class="card">
+            <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/Secure-Auth-Backend'); background-size: cover; background-position: center;"></div>
+            <div class="card-body">
+              <h3>Secure Authentication System</h3>
+              <div class="project-tags">
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>JWT / 2FA</span>
+                <span>bcrypt</span>
+              </div>
+              <p>An industry-strength authentication server featuring multi-provider OAuth, cryptographically secure JWT (AccessToken/RefreshToken) rotations, multi-factor authorization (2FA), strict password-hashing, and IP rate limiting.</p>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/muhammadusman2228" target="_blank" rel="noopener">GitHub Repository</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 5: Cryptographical Zero-Knowledge Password Manager -->
+        <div class="card-wrapper" data-category="security">
+          <article class="card">
+            <div class="card-media" style="background-image: url('https://opengraph.githubassets.com/1/muhammadusman2228/Password-Manager-Crypto'); background-size: cover; background-position: center;"></div>
+            <div class="card-body">
+              <h3>Zero-Knowledge Password Manager</h3>
+              <div class="project-tags">
+                <span>React / Next.js</span>
+                <span>Web Crypto API</span>
+                <span>AES-256</span>
+                <span>SQLite</span>
+              </div>
+              <p>A highly secure password manager utilizing zero-knowledge architecture. Sensitive login records are encrypted client-side using PBKDF2 salt derivations and AES-GCM 256-bit encryption before cloud sync, securing absolute privacy.</p>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/muhammadusman2228" target="_blank" rel="noopener">GitHub Repository</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
+    <!-- Academics & Experience Section -->
     <section class="container academics" id="academics">
       <h2>Academic Background & Core Expertise</h2>
       <p class="muted" style="margin-bottom: 24px; max-width: 800px; line-height: 1.6;">
         I am pursuing my <strong>B.Sc. in Computer Science</strong>, where I have developed a robust theoretical and practical foundation. My extensive coursework and deep understanding of these core computer science subjects empower me to write highly optimized code, design scalable architectures, and tackle complex software engineering challenges.
       </p>
       
-      <div class="academics-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 30px;">
-        
+      <div class="academics-grid">
         <!-- Architecture -->
-        <div class="academic-card card" style="background: rgba(255,255,255,0.02); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); transition: transform 300ms, box-shadow 300ms; text-align: left;">
+        <div class="academic-card">
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent1), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(59,130,246,0.3);">
+            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-purple)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(99,102,241,0.3);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
             </div>
             <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Software Architecture & Design</h3>
@@ -159,9 +230,9 @@
         </div>
 
         <!-- Database -->
-        <div class="academic-card card" style="background: rgba(255,255,255,0.02); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); transition: transform 300ms, box-shadow 300ms; text-align: left;">
+        <div class="academic-card">
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent1), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(59,130,246,0.3);">
+            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-purple)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(99,102,241,0.3);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
             </div>
             <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Data & Systems Engineering</h3>
@@ -171,9 +242,9 @@
         </div>
 
         <!-- Core CS -->
-        <div class="academic-card card" style="background: rgba(255,255,255,0.02); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); transition: transform 300ms, box-shadow 300ms; text-align: left;">
+        <div class="academic-card">
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent1), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(59,130,246,0.3);">
+            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-purple)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(99,102,241,0.3);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
             </div>
             <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Algorithms & Theory</h3>
@@ -183,9 +254,9 @@
         </div>
 
         <!-- Infrastructure & Security -->
-        <div class="academic-card card" style="background: rgba(255,255,255,0.02); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); transition: transform 300ms, box-shadow 300ms; text-align: left;">
+        <div class="academic-card">
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent1), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(59,130,246,0.3);">
+            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-purple)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(99,102,241,0.3);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
             <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Infrastructure & Security</h3>
@@ -195,9 +266,9 @@
         </div>
 
         <!-- Hardware -->
-        <div class="academic-card card" style="background: rgba(255,255,255,0.02); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); transition: transform 300ms, box-shadow 300ms; text-align: left;">
+        <div class="academic-card">
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent1), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(59,130,246,0.3);">
+            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-purple)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(99,102,241,0.3);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
             </div>
             <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Hardware & Low-Level</h3>
@@ -207,37 +278,42 @@
         </div>
 
         <!-- Applied Computing -->
-        <div class="academic-card card" style="background: rgba(255,255,255,0.02); padding: 24px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); transition: transform 300ms, box-shadow 300ms; text-align: left;">
+        <div class="academic-card">
           <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
-            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent1), var(--accent2)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(59,130,246,0.3);">
+            <div style="width: 48px; height: 48px; min-width: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--accent-indigo), var(--accent-purple)); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(99,102,241,0.3);">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
             </div>
-            <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Applied Computing</h3>
+            <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.2;">Applied Computing & Media</h3>
           </div>
           <p class="muted" style="font-size: 0.9rem; margin-top: 0; margin-bottom: 12px;"><strong>Key Subjects:</strong> Mobile App Development, Digital Image Processing</p>
           <p style="font-size: 0.95rem; margin: 0; color: #cbd5e1; line-height: 1.5;">Hands-on experience translating theoretical computer science knowledge into tangible products, building robust user-centric mobile applications and working with visual data.</p>
         </div>
-
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="container contact" id="contact">
-      <h2>Contact</h2>
-      <p>Email me at <a href="mailto:usmanbhatti504021@gmail.com">usmanbhatti504021@gmail.com</a> or send a quick Gmail message:</p>
-      <p><a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=usmanbhatti504021@gmail.com" target="_blank" rel="noopener">Compose in Gmail</a>
-      <a class="btn ghost" href="tel:+923124122906">Call: +92 312 4122906</a></p>
-      <p class="muted">You can also find me on GitHub and LinkedIn below.</p>
-      <p class="socials">
-        <a class="link" href="https://github.com/muhammadusman2228" target="_blank" rel="noopener">GitHub</a> - 
+      <h2>Let's Build Something Legendary</h2>
+      <p>I am always looking for challenges, software positions, and interesting SaaS integrations. Let's start a conversation.</p>
+      
+      <div class="contact-buttons">
+        <a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=usmanbhatti504021@gmail.com" target="_blank" rel="noopener">Compose in Gmail ↗</a>
+        <a class="btn ghost" href="tel:+923124122906">Call: +92 312 4122906</a>
+      </div>
+      
+      <p class="muted" style="margin-bottom: 15px;">Connect with me on social platforms:</p>
+      <div class="socials">
+        <a class="link" href="https://github.com/muhammadusman2228" target="_blank" rel="noopener">GitHub</a>
+        <span class="muted">•</span>
         <a class="link" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
-      </p>
-      <p style="margin-top:12px"><a class="btn" href="assets/Muhammad_Usman_Resume_Full.pdf" download>Download Resume (PDF)</a></p>
+      </div>
+      <p style="margin-top:28px"><a class="btn ghost" href="assets/Muhammad_Usman_Resume_Full.pdf" download>Download Professional Resume (PDF)</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Muhammad Usman — Built with ❤️</small>
+    <div class="container" style="padding: 0 24px;">
+      <small>© <span id="year"></span> Muhammad Usman — Architected with ❤️ and Modern Technologies</small>
     </div>
   </footer>
 
